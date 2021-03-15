@@ -22,5 +22,3 @@ Route::post("startGame", [UserController::class,'startGame']);
 Route::post("savewrongletters", [UserController::class,'saveWrongLetters']);
 Route::post("savecorrectletters", [UserController::class,'saveCorrectLetters']);
 Route::post("savelastword", [UserController::class,'saveLastWord']);
-Route::post("getcorrectletters", [UserController::class,'getCorrectLetters']);
-Route::post("getwrongletters", [UserController::class,'getWrongLetters']);
