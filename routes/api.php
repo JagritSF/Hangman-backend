@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post("startGame", [UserController::class,'startGame']);
-Route::post("savewrongletters", [UserController::class,'saveWrongLetters']);
-Route::post("savecorrectletters", [UserController::class,'saveCorrectLetters']);
-Route::post("savelastword", [UserController::class,'saveLastWord']);
+Route::post("start-game", [UserController::class,'startGame']);
+Route::post("save-wrong-letters", [UserController::class,'saveWrongLetters']);
+Route::post("save-correct-letters", [UserController::class,'saveCorrectLetters']);
+Route::post("save-last-word", [UserController::class,'saveLastWord']);
